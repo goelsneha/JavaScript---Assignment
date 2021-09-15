@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Simple Interest</title>
+</head>
+
+<body>
+
+    <script>
+        function simple_interest(p, r, n) {
+            var result = (p * n * r / 100);
+            console.log("Value of Principal : ", p);
+            console.log("Value of Interest Rate : ", r);
+            console.log("Value of No. of Years : ", n);
+            console.log("Simple Interest : ", result);
+        }
+
+        var p = prompt("Enter the principal : ");
+        var r = prompt("Enter the interest rate : ");
+        var n = prompt("Enter the no of years : ");
+
+        simple_interest(p, r, n);
+    </script>
+
+</body>
+
+</html>

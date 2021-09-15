@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Employee Details</title>
+</head>
+
+<body>
+
+    <script>
+        // Name, age, salary ,DOB
+
+        var employees = [{
+                name: "John",
+                age: 22,
+                salary: 999,
+                DOB: "March 12, 1999"
+            },
+            {
+                name: "Eric",
+                age: 17,
+                salary: 4550,
+                DOB: "June 02, 2004"
+            },
+            {
+                name: "Joey",
+                age: 18,
+                salary: 1000,
+                DOB: "December 20, 2003"
+            },
+            {
+                name: "Micheal",
+                age: 16,
+                salary: 3999,
+                DOB: "April 30, 2005"
+            },
+            {
+                name: "Joe",
+                age: 23,
+                salary: 5999,
+                DOB: "May 22, 2000"
+            },
+            {
+                name: "Nick",
+                age: 27,
+                salary: 8550,
+                DOB: "July 02, 1994"
+            },
+            {
+                name: "Tanay",
+                age: 30,
+                salary: 15000,
+                DOB: "June 19, 1991"
+            },
+            {
+                name: "Nidhi",
+                age: 32,
+                salary: 13999,
+                DOB: "April 01, 1989"
+            },
+            {
+                name: "Shrey",
+                age: 19,
+                salary: 4899,
+                DOB: "October 18, 2002"
+            },
+            {
+                name: "William",
+                age: 28,
+                salary: 6650,
+                DOB: "June 18, 1993"
+            },
+            {
+                name: "Justin",
+                age: 20,
+                salary: 2000,
+                DOB: "January 29, 2001"
+            },
+            {
+                name: "Harry",
+                age: 26,
+                salary: 800,
+                DOB: "April 23, 1995"
+            },
+            {
+                name: "Rachel",
+                age: 21,
+                salary: 9999,
+                DOB: "August 08, 2000"
+            },
+            {
+                name: "Richa",
+                age: 37,
+                salary: 8550,
+                DOB: "July 22, 1984"
+            },
+            {
+                name: "Rohan",
+                age: 19,
+                salary: 7000,
+                DOB: "May 15, 2002"
+            },
+            {
+                name: "Rahul",
+                age: 16,
+                salary: 2999,
+                DOB: "Febrary 11, 2005"
+            }
+        ]
+
+        // console.log(employees);
+
+        // filter all employees with salary greater than 5000
+
+
+        var employee_Salary = employees.filter(function (item) {
+            if (item.salary > 5000) {
+                return item;
+            }
+        });
+
+        console.log(employee_Salary);
+
+
+
+        // group employee on the basis of their age
+
+         employees.sort((a, b) => (a.age > b.age ? 1 : -1))
+         console.log(employees);
+
+
+        // fetch employees with salary less than 1000 and age greater than 20. Then give them an increment 5 times their salary.
+
+           var Employee_new = employees.filter(function (items) {
+            if (items.salary < 1000 && items.age > 20) {
+                    items.salary = items.salary + 5 * items.salary;
+                    return items;
+            }
+
+             });
+
+          console.log(Employee_new);
+
+    </script>
+
+</body>
+
+</html>
